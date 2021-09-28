@@ -21,7 +21,7 @@ class CreatePostView(LoginRequiredMixin, CreateView):
     """Create New Post View"""
     template_name = 'instaapp/new.html'
     form_class = PostForm
-    success_url = reverse_lazy('posts:feed')
+    success_url = reverse_lazy('instaapp:feed')
     context_object_name = 'form'
 
     def get_context_data(self, **kwargs):

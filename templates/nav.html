@@ -2,7 +2,7 @@
 
 <nav class="navbar navbar-expand-lg fixed-top navbar-light" id="main-navbar">
     <div class="container">
-        <a class="navbar-brand pr-5" style="border-right: 1px solid #efefef;" href="{% url "posts:feed" %}">
+        <a class="navbar-brand pr-5" style="border-right: 1px solid #efefef;" href="{% url "instaapp:feed" %}">
             <img src="{% static "img/insta.jpg" %}" height="45" class="d-inline-block align-top"/>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,14 +13,14 @@
 
 
                 <li class="nav-item nav-icon">
-                    <a href="{% url "posts:feed" %}" >
+                    <a href="{% url "instaapp:feed" %}" >
                         <i class="fas fa-home"></i>
                         <span class="d-sm-block d-md-none d-xl-none">Add Post</span>
                     </a>
                 </li>
 
                 <li class="nav-item nav-icon">
-                    <a href="{% url "posts:create_post" %}" >
+                    <a href="{% url "instaapp:create_post" %}" >
                         <i class="fas fa-plus"></i>
                         <span class="d-sm-block d-md-none d-xl-none">Add Post</span>
                     </a>
