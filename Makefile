@@ -11,4 +11,8 @@ migrations:
 
 migrate:
 	python3 manage.py migrate
-	
+
+heroku:	
+	git add .
+	git commit -am "made changes"
+	git push heroku main
