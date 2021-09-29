@@ -46,6 +46,7 @@ INSTALLED_APPS = [
 
     'instaapp',
     'users',
+    'cloudinary',
 ]
 
 MIDDLEWARE = [

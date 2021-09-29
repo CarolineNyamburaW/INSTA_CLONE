@@ -23,7 +23,7 @@ class Profile(models.Model):
     biography = models.TextField(blank=True)
     phone_number = models.CharField(max_length=20, blank=True)
 
-    picture = CloudinaryField('image', default='/img/default-profile.png')
+    picture = CloudinaryField('image')
     # picture = models.ImageField( upload_to='static/img', blank=True, null=True)
 
     # time
