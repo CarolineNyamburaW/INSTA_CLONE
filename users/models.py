@@ -5,6 +5,8 @@ from django.contrib.auth.models import User
 from django.db import models
 
 # Create your models here.
+from django.db import models
+from cloudinary.models import CloudinaryField
 
 
 class Profile(models.Model):
@@ -21,11 +23,8 @@ class Profile(models.Model):
     biography = models.TextField(blank=True)
     phone_number = models.CharField(max_length=20, blank=True)
 
-    picture = models.ImageField(
-        upload_to='static/img',
-        blank=True,
-        null=True
-    )
+    picture = CloudinaryField('image', default='/img/default-profile.png')
+    # picture = models.ImageField( upload_to='static/img', blank=True, null=True)
 
     # time
     created = models.DateTimeField(auto_now_add=True)
