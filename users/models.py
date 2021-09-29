@@ -22,7 +22,7 @@ class Profile(models.Model):
     phone_number = models.CharField(max_length=20, blank=True)
 
     picture = models.ImageField(
-        upload_to='users/pictures',
+        upload_to='static/img',
         blank=True,
         null=True
     )
