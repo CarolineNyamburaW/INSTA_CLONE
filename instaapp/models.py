@@ -17,7 +17,7 @@ class Post(models.Model):
 
     title = models.CharField(max_length=255)
     # photo = models.ImageField(upload_to='static/img')
-    photo = CloudinaryField('image')
+    photo = CloudinaryField('image', default='.jpg,.png')
 
 
     created = models.DateTimeField(auto_now_add=True)
